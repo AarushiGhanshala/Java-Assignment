@@ -1,0 +1,20 @@
+class Main {
+    public static void main(String[] args) {
+        String s1 = "Hello World";
+        System.out.println("Original String : " + s1);
+        
+        String s2 = new String("Java");
+        
+        System.out.println("Length : " + s1.length());
+        System.out.println("Uppercase : " + s1.toUpperCase());
+        System.out.println("Lowercase : " + s1.toLowerCase());
+        System.out.println("Concatenated String : " + s1.concat(" "+s2));
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.compareTo(s2));
+        System.out.println("Character at index 4 : " + s1.charAt(4));
+        System.out.println("Index of 'o' : " + s1.indexOf('o'));
+        System.out.println("Last Index of 'o' : " + s1.lastIndexOf('o'));
+        System.out.println("Substring from Index 6 : " + s1.substring(6));
+        System.out.println("Replaced String : " + s1.replace("World","Java"));
+    }
+}
