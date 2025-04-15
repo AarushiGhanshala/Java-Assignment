@@ -1,5 +1,9 @@
+//Create a Java program that demonstrates the following String operations :
+       
 class Main {
     public static void main(String[] args) {
+
+//Creating strings using literals and the new keyword.
         String s1 = "Hello";
         String s2 = new String("World");
         System.out.println("Literal String : " + s1);
@@ -7,19 +11,32 @@ class Main {
        
         s1 = s1 + " " + s2;    
         System.out.println("Original String : " + s1);
-        
-        String s2 = new String("Java");
-        
+
+//Finding the length of a string.
         System.out.println("Length : " + s1.length());
+
+//Converting a string to uppercase and lowercase.
         System.out.println("Uppercase : " + s1.toUpperCase());
         System.out.println("Lowercase : " + s1.toLowerCase());
+
+//Concatenating two strings.
         System.out.println("Concatenated String : " + s1.concat(" "+s2));
+
+//Comparing two strings using .equals() and .compareTo().
         System.out.println(s1.equals(s2));
         System.out.println(s1.compareTo(s2));
+
+//Finding a character at a specific index using .charAt().
         System.out.println("Character at index 4 : " + s1.charAt(4));
+
+//Finding the index of a character or substring using .indexOf() and .lastIndexOf().
         System.out.println("Index of 'o' : " + s1.indexOf('o'));
         System.out.println("Last Index of 'o' : " + s1.lastIndexOf('o'));
+        
+//Extracting a substring using .substring().
         System.out.println("Substring from Index 6 : " + s1.substring(6));
+
+//Replacing characters or substrings using .replace().
         System.out.println("Replaced String : " + s1.replace("World","Java"));
     }
 }
